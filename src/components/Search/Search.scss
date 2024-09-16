@@ -1,0 +1,35 @@
+@import "./../../assets/styles/variables";
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Quicksand;
+
+    &__input {
+        border: 3px darken($primary-color, 10%) solid;
+        border-radius: 30px;
+        padding: 10px;
+        width: 80vw;
+        height: 50px;
+    }
+
+    &__button {
+        border-radius: 30px;
+        padding: 10px;
+        background-color: $primary-color;
+        border: 3px darken($primary-color, 10%) solid;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .search {
+        &__input {
+            width: 300px;
+            margin: 30px;
+            font-size: 15px;
+
+        }
+
+    }
+}

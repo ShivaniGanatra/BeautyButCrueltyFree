@@ -1,0 +1,70 @@
+@import "./../../assets/styles/variables";
+
+.nav {
+    color: $teriary-color;
+    background-color: $quinary-color;
+    width: 100%;
+
+    &__heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Parisienne";
+        font-size: 55px;
+        margin: 0px;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    &__click {
+        width: 100px;
+        height: 100px;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__icon {
+        width: 60px;
+        margin: 0px 30px;
+    }
+
+    &__button {
+        background-color: transparent;
+        border: none;
+        padding: 10px;
+    }
+
+    &__center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .nav {
+        color: $teriary-color;
+
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 50px;
+
+        &__search {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Parisienne";
+            font-size: 60px;
+            margin: 0px;
+        }
+    }
+
+
+}
