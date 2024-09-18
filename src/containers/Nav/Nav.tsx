@@ -50,16 +50,16 @@ const Nav = ({ }) => {
             </div>
 
 
-            <h1 className="nav__heading">Beauty but cruelty free</h1>
+            <h1 className="nav__heading">test Beauty but cruelty free</h1>
+
+            <div className="nav__center">
+                {showKeys && <Keys toggleKeys={toggleKeys}/>}
+            </div>
 
             <div className="nav__center">
                 {showNav && (
                     <PopUp toggleNav= {toggleNav} user={user} onSubmit ={onSubmit}/>
                 )}
-            </div>
-
-            <div className="nav__center">
-                {showKeys && <Keys toggleKeys={toggleKeys}/>}
             </div>
 
             <div>
