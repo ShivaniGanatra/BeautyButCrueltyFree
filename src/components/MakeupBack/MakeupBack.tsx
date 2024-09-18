@@ -67,4 +67,4 @@ const MakeupCardBack: React.FC<MakeupCardBackProps> = ({
 
 export default MakeupCardBack;
 
-// https://stackoverflow.com/questions/72410312/svg-outline-and-fill
+

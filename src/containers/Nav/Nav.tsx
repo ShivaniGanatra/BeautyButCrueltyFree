@@ -10,13 +10,13 @@ import PopUp from "../../components/PopUp/PopUp";
 
 
 const Nav = ({ }) => {
-    const [showNav, setShowNav] = useState(false);
+    const [showNav, setShowNav] = useState(true);
     
     const toggleNav = () => {
         setShowNav(!showNav);
     };
 
-    const [showKeys, setShowKeys] = useState(false);
+    const [showKeys, setShowKeys] = useState(true);
     const toggleKeys = () => {
         setShowKeys(!showKeys);
     };
@@ -51,13 +51,16 @@ const Nav = ({ }) => {
 
 
             <h1 className="nav__heading">Beauty but cruelty free</h1>
+
             <div className="nav__center">
                 {showNav && (
                     <PopUp toggleNav= {toggleNav} user={user} onSubmit ={onSubmit}/>
                 )}
             </div>
 
-            <div className="key">{showKeys && <Keys toggleKeys={toggleKeys}/>}</div>
+            <div className="nav__center">
+                {showKeys && <Keys toggleKeys={toggleKeys}/>}
+            </div>
 
             <div>
                 <Link to="/">

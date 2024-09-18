@@ -1,8 +1,7 @@
 import "./Shade.scss"
 
 interface ShadeProps{
-  color:string
-  
+  color:string 
 }
 
 const Shade:React.FC<ShadeProps> = ({color}) => {

@@ -6,15 +6,15 @@ interface KeyProps {
 const Keys = ({toggleKeys}:KeyProps) => {
 
     return (
-        <div>
+        <div className="key">
             <div className="key__content" onClick={toggleKeys}>
                 <div className="key__item">
                     <div className="key__shade key__shade--vegan"></div>
-                    <div className="key__name "> : Vegan</div>
+                    <p className="key__name "> : Vegan</p>
                 </div>
                 <div className="key__item">
                     <div className="key__shade key__shade--vegan-crueltyfree"></div>
-                    <div className="key__name">: Vegan & Cruelty Free</div>
+                    <p className="key__name">: Vegan & Cruelty Free</p>
                 </div>
             </div>
         </div>
