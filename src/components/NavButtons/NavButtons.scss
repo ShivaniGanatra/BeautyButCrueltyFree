@@ -10,15 +10,12 @@
     border-radius: 10px 10px 0px 0px;
 
     &--primary {
-        background-image: linear-gradient(white, lighten($septenary-color,1%))
-        
+        background-image: linear-gradient(white, lighten($septenary-color,1%))   
     }
 
     &--secondary {
         background-image: linear-gradient(white, $senary-color);
     }
-
-
 }
 
 @media screen and (min-width:768px){
@@ -31,9 +28,6 @@
         border: none;
         width: 33%;
         border-radius: 10px 10px 0px 0px;
-    
 
-    
-    
     }
 }

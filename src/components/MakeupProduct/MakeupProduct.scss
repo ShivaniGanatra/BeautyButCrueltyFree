@@ -1,46 +1,52 @@
 @import "./../../assets/styles/variables";
 
-.front__button {
-    max-width: 300px;
-    padding: 10px;
-    border-radius: 0px 0PX 10PX 10PX;
-    border: 0px;
-    width: 90vw;
+.front {
+    &__button {
+        max-width: 300px;
+        padding: 10px;
+        border-radius: 0px 0PX 10PX 10PX;
+        border: 0px;
+        width: 90vw;
 
-    &--green {
-        background-color: $senary-color;
-    }
+        &--green {
+            background-color: $senary-color;
+        }
 
-    &--purple {
-        background-color: lighten($septenary-color, 7%);
-    }
-}
-
-.back__button {
-    width: 90vw;
-    max-width: 300px;
-    padding: 10px;
-    border-radius: 0px 0PX 10PX 10PX;
-    border: 0px;
-    max-width: 300px;
-
-    &--purple {
-        background-color: lighten($septenary-color, 7%);
-    }
-
-    &--green {
-        background-color: $senary-color;
+        &--purple {
+            background-color: lighten($septenary-color, 7%);
+        }
     }
 }
 
+.back {
+    &__button {
+        width: 90vw;
+        max-width: 300px;
+        padding: 10px;
+        border-radius: 0px 0PX 10PX 10PX;
+        border: 0px;
+        max-width: 300px;
 
+        &--purple {
+            background-color: lighten($septenary-color, 7%);
+        }
+
+        &--green {
+            background-color: $senary-color;
+        }
+    }
+}
 
 @media screen and (min-width:768px) {
-    .back__button {
-        width: 275px;
+    .back {
+        &__button {
+            width: 275px;
+        }
     }
 
-    .front__button {
-        width: 275px;
+    .front {
+        &__button {
+            width: 275px;
+        }
     }
 }
