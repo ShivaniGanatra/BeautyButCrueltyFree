@@ -10,13 +10,13 @@ import PopUp from "../../components/PopUp/PopUp";
 
 
 const Nav = ({ }) => {
-    const [showNav, setShowNav] = useState(true);
+    const [showNav, setShowNav] = useState(false);
     
     const toggleNav = () => {
         setShowNav(!showNav);
     };
 
-    const [showKeys, setShowKeys] = useState(true);
+    const [showKeys, setShowKeys] = useState(false);
     const toggleKeys = () => {
         setShowKeys(!showKeys);
     };
